@@ -36,31 +36,31 @@ let picture2;
 let picture3;
 
 function preload() {
-  bgImage = loadImage("../assets/images/bg.jpg");
-  mgImage = loadImage("../assets/images/mg.png");
+  bgImage = loadImage("./assets/images/bg.jpg");
+  mgImage = loadImage("./assets/images/mg.png");
 
-  mgShadow = loadImage("../assets/images/mg_shadow.png");
+  mgShadow = loadImage("./assets/images/mg_shadow.png");
 
-  picture1 = loadImage("../assets/images/img1.jpeg");
-  picture2 = loadImage("../assets/images/img2.jpeg");
-  picture3 = loadImage("../assets/images/img3.png");
+  picture1 = loadImage("./assets/images/img1.jpeg");
+  picture2 = loadImage("./assets/images/img2.jpeg");
+  picture3 = loadImage("./assets/images/img3.png");
 
-  workIcon = loadImage("../assets/images/icons/work.png");
-  toolIcon = loadImage("../assets/images/icons/tool.png");
-  comfortIcon = loadImage("../assets/images/icons/heart.png");
+  workIcon = loadImage("./assets/images/icons/work.png");
+  toolIcon = loadImage("./assets/images/icons/tool.png");
+  comfortIcon = loadImage("./assets/images/icons/heart.png");
 
-  cookieSound = loadSound("../assets/audio/cookie-eating.wav");
-  hoverSound = loadSound("../assets/audio/bip.mp3");
-  bgSound = loadSound("../assets/audio/bg-music.m4a");
+  cookieSound = loadSound("./assets/audio/cookie-eating.wav");
+  hoverSound = loadSound("./assets/audio/bip.mp3");
+  bgSound = loadSound("./assets/audio/bg-music.m4a");
 
   //a more descrete way to load multiple sequential files
   for (let i = 1; i < 6; i++) {
-    fg.push(loadImage("../assets/images/fg_animate/eating" + i + ".png"));
-    fgShadow.push(loadImage("../assets/images/fg_animate/shadow" + i + ".png"));
+    fg.push(loadImage("./assets/images/fg_animate/eating" + i + ".png"));
+    fgShadow.push(loadImage("./assets/images/fg_animate/shadow" + i + ".png"));
   }
 
   for (let i = 1; i < 7; i++) {
-    mistLoop.push(loadImage("../assets/images/mist_loop/mist" + i + ".png"));
+    mistLoop.push(loadImage("./assets/images/mist_loop/mist" + i + ".png"));
   }
 }
 function setup() {
